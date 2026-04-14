@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-charcoal: #121212;
+  --color-electric-blue: #007BFF;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-white font-sans antialiased;
+  }
+}
+
+@keyframes binary-scroll {
+  from { background-position: 0 0; }
+  to { background-position: 0 100px; }
+}
+
+.animate-binary-scroll {
+  animation: binary-scroll 20s linear infinite;
+}
