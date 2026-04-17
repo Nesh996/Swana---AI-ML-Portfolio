@@ -27,6 +27,7 @@ This website serves as a digital showcase of my expertise in **Intelligent Syste
 - **LinkedIn:** [Nandipha Swana](https://linkedin.com/in/your-profile)
 - **Email:** [swananandy96@gmail.com](mailto:swananandy96@gmail.com)
 - **GitHub:** [nandiphaswana](https://github.com/nandiphaswana)
+- https://ai.studio/apps/4c99e07c-70f0-4d3c-9a15-49cdbeb3e776
 
 ---
 *Built with precision and a focus on Intelligent Systems.*
