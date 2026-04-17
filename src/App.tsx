@@ -27,7 +27,8 @@ import {
   Loader2,
   FileText,
   Upload,
-  Eye
+  Eye,
+  Download
 } from "lucide-react";
 
 type Section = "home" | "about" | "projects" | "contact";
@@ -357,12 +358,22 @@ export default function App() {
                             </div>
                           </div>
                         </div>
-                        <button 
-                          onClick={() => openPdf(item.pdf)}
-                          className="px-4 py-2 border border-electric-blue/50 text-electric-blue text-xs font-bold rounded-lg hover:bg-electric-blue hover:text-white transition-all whitespace-nowrap"
-                        >
-                          Preview
-                        </button>
+                        <div className="flex items-center gap-2">
+                          <button 
+                            onClick={() => openPdf(item.pdf)}
+                            className="px-4 py-2 border border-electric-blue/50 text-electric-blue text-xs font-bold rounded-lg hover:bg-electric-blue hover:text-white transition-all whitespace-nowrap"
+                          >
+                            View
+                          </button>
+                          <a 
+                            href={item.pdf}
+                            download
+                            className="p-2 border border-white/10 text-white/40 rounded-lg hover:border-electric-blue hover:text-electric-blue transition-all"
+                            title="Download PDF"
+                          >
+                            <Download className="w-4 h-4" />
+                          </a>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -652,7 +663,7 @@ export default function App() {
                     download
                     className="text-[10px] font-bold uppercase tracking-widest text-electric-blue hover:text-white transition-colors flex items-center gap-1.5 px-3 py-1.5 border border-electric-blue/30 rounded-full"
                   >
-                    <ExternalLink className="w-3 h-3" />
+                    <Download className="w-3 h-3" />
                     Download PDF
                   </a>
                 </div>
